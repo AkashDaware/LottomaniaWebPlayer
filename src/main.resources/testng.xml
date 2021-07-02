@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lottomania Web Player Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.LottomaniaWeb.qa.ExtentReportListner.ExtentReporterNG" />
+	</listeners>
+	<test name="Lottomania Web Player Test Cases">
+		<classes>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest"></class>
+			<class
+				name="com.LottomaniaWeb.qa.testcases.BetPlacePageForFirstNumberTest"></class>
+			<class
+				name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPermAgainstTest"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageTest"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForNap4Test"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForNap5Test"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm2Test"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm3Test"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm4Test"></class>
+			<class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm5Test"></class>
+		</classes>
+	</test>
+</suite>
