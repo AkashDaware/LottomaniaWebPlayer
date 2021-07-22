@@ -26,8 +26,9 @@ public class LoginPage extends TestBase{
 		}
 		
 		//Actions
-		public HomePage login(String un, String pwd) {
+		public HomePage login(String un, String pwd) throws InterruptedException {
 			login.click();
+			Thread.sleep(1000L);
 			userName.sendKeys(un);
 			password.sendKeys(pwd);
 			submit.click();

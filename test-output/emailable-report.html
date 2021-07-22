@@ -31,14 +31,59 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">16.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">26.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.LottomaniaWeb.qa.testcases.GamePageTest</td><td><a href="#m1"><b>selectBetPlaceTypeTest</b>  </a></td><td class="numi">1</td><td>1624424899551</td><td class="numi">620</td></tr>
+<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1626938558731</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1626938584970</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest</td><td><a href="#m3"><b>BankerAllBetSelection</b>  </a></td><td class="numi">1</td><td>1626938584955</td><td class="numi">0</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.LottomaniaWeb.qa.testcases.GamePageTest:selectBetPlaceTypeTest</h2>
+<h2 id="m1">com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest:setUp</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;button class=&quot;btn btn-default dropdown-toggle dropdown-button-white ng-binding&quot; type=&quot;button&quot; id=&quot;banker&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/button&gt; is not clickable at point (1184, 138). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;loginModel&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalCenterTitle&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=91.0.4472.164)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AKASHD&apos;, ip: &apos;10.1.7.176&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\akashd\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f9a77ea6475148a36e2d1e660a8f6407</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+<br/>at com.sun.proxy.$Proxy12.click(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy11.click(Unknown Source)
+<br/>at com.LottomaniaWeb.qa.pages.HomePage.selectGame(HomePage.java:34)
+<br/>at com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest.setUp(BetPlacePageForBankerAllTest.java:29)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest:BankerAllBetSelection</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

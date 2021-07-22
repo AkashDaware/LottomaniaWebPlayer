@@ -7,7 +7,6 @@
         <methods>
           <include name="setUp"/>
           <include name="BankerAllBetSelection"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest -->
     </classes>

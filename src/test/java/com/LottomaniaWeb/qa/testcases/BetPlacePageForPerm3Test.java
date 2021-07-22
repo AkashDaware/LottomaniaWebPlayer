@@ -59,11 +59,10 @@ public class BetPlacePageForPerm3Test extends TestBase{
 		perm3.selectPanel10forPerm3Double();
 		perm3.betTypeSelection();
 		perm3.pay();
+		
 	}
-
-	@Test(priority = 2)
-	public void Perm2BetSelection1() throws InterruptedException {
-		perm3.betTypeSelection();
+	@Test(priority=2)
+	public void Perm3BetSelectionMachine() throws InterruptedException {
 		perm3.selectPanel1forPerm3();
 		perm3.selectPanel1forPerm3Machine();
 		perm3.betTypeSelection();
@@ -78,8 +77,11 @@ public class BetPlacePageForPerm3Test extends TestBase{
 		perm3.betTypeSelection();
 		perm3.selectPanel5forPerm3();
 		perm3.selectPanel5forPerm3Machine();
+		perm3.betTypeSelection();
 		perm3.pay();
-	}	
+	}
+
+		
 
 	@AfterMethod
 	public void tearDown() {

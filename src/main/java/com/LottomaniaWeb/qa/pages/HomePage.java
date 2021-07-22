@@ -1,6 +1,7 @@
 package com.LottomaniaWeb.qa.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,12 +28,16 @@ public class HomePage extends TestBase	{
 	
 	//Actions
 	public  GamePage selectGame() throws InterruptedException{
+		Thread.sleep(10000L);
 		WebDriverWait wait = new WebDriverWait(driver,100);
 		wait.until(ExpectedConditions.visibilityOf(eventButton));
 		eventButton.click();
 		driver.findElement(gameLink).click();
 		String text = eventButton.getText();
+		System.out.println(text);
 		if(!text.equalsIgnoreCase(gameName)) {
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("scroll(250, 0)");	
 		eventButton.click();
 		driver.findElement(gameLink).click();
 		}

@@ -1,73 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Lottomania Web Player Automation Test Suite]">
-  <listeners>
-    <listener class-name="com.LottomaniaWeb.qa.ExtentReportListner.ExtentReporterNG"/>
-  </listeners>
-  <test name="Lottomania Web Player Test Cases(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForFirstNumberTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForFirstNumberTest -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm5Test">
-        <methods>
-          <include name="Perm5BetSelectionMachine"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm5Test -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm4Test">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="Perm4BetSelectionMachine"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm4Test -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm2Test">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm2Test -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm3Test">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForPerm3Test -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForPermAgainstTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForPermAgainstTest -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForNap4Test">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForNap4Test -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForNap5Test">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForNap5Test -->
       <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="BankerAllBetSelection"/>
         </methods>
       </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageForBankerAllTest -->
-      <class name="com.LottomaniaWeb.qa.testcases.BetPlacePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.LottomaniaWeb.qa.testcases.BetPlacePageTest -->
     </classes>
-  </test> <!-- Lottomania Web Player Test Cases(failed) -->
-</suite> <!-- Failed suite [Lottomania Web Player Automation Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

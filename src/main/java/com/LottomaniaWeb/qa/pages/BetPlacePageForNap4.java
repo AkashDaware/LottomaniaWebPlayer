@@ -51,7 +51,7 @@ public class BetPlacePageForNap4 extends TestBase{
 		WebDriverWait wait = new WebDriverWait(driver,100);
 		wait.until(ExpectedConditions.visibilityOf(betTypeDropDown));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("scroll(250, 0)");	
+		js.executeScript("scroll(300, 0)");	
 		betTypeDropDown.click();
 		driver.findElement(betType).click();
 	}

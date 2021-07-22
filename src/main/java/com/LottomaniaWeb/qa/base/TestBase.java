@@ -26,8 +26,8 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\akashd\\WebPlayer\\src\\"
-					+ "main\\java\\com\\LottomaniaWeb\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\akashd\\WebPlayer.zip_expanded\\"
+					+ "WebPlayer\\src\\main\\java\\com\\LottomaniaWeb\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

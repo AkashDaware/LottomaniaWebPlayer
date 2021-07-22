@@ -26,10 +26,11 @@ public class GamePageTest extends TestBase{
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		gamePage = homePage.selectGame();
-}
+	}
 	
 	@Test(priority=1)
-	public void selectBetPlaceTypeTest() {
+	public void selectBetPlaceTypeTest() throws InterruptedException  {
+		
 		betPlacePage = gamePage.selectBetType();
 	}
 	
